@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Luyện viết Tiếng Anh THPT</title>
+<style>
+body{font-family:Arial;line-height:1.6;padding:20px}
+select,button,textarea{width:100%;padding:8px;margin:8px 0}
+.question{margin-bottom:15px}
+.answers{display:none;background:#eef;padding:10px;margin-top:10px}
+h2{color:#2c3e50}
+h3{color:#34495e}
+h4{color:#7f8c8d}
+</style>
+</head>
+<body>
+
+<h2>CHỌN MỨC ĐỘ</h2>
+<select id="level" onchange="changeLevel()">
+<option value="nb">I. NHẬN BIẾT</option>
+<option value="th">II. THÔNG HIỂU</option>
+<option value="vd">III. VẬN DỤNG</option>
+</select>
+
+<div id="content"></div>
+<button onclick="toggleAnswers()">Nộp bài / Hiện đáp án</button>
+
+<script>
+const data = {
+
+/* ================= NHẬN BIẾT ================= */
+nb: `
+<h2>I. NHẬN BIẾT</h2>
+
+<h3>Task 1. Rewrite sentences</h3>
+
+<h4>🟢 Dễ</h4>
+<div class="question">1. I haven’t eaten this food before.<textarea></textarea></div>
+<div class="question">2. It isn’t necessary to finish today.<textarea></textarea></div>
+
+<h4>🟡 Trung bình</h4>
+<div class="question">3. Although it was raining, we went out.<textarea></textarea></div>
+<div class="question">4. “Where do you live?” he asked me.<textarea></textarea></div>
+
+<h4>🔴 Khó</h4>
+<div class="question">5. The architect has drawn plans for the house.<textarea></textarea></div>
+
+<h3>Task 2. Conditional</h3>
+<div class="question">6. He is late, so he can’t join us.<textarea></textarea></div>
+<div class="question">7. There are few tourists, so the tour is cancelled.<textarea></textarea></div>
+
+<div class="answers">
+<b>ĐÁP ÁN</b>
+<ol>
+<li>This is the first time I have eaten this food.</li>
+<li>You don’t have to finish today.</li>
+<li>Despite the rain, we went out.</li>
+<li>He asked me where I lived.</li>
+<li>Plans for the house have been drawn by the architect.</li>
+<li>If he weren’t late, he could join us.</li>
+<li>If there were more tourists, the tour wouldn’t be cancelled.</li>
+</ol>
+</div>
+`,
+
+/* ================= THÔNG HIỂU ================= */
+th: `
+<h2>II. THÔNG HIỂU</h2>
+
+<h3>Task 1. Rewrite sentences</h3>
+
+<h4>🟢 Dễ</h4>
+<div class="question">1. Can you understand this lesson? (sense)<textarea></textarea></div>
+
+<h4>🟡 Trung bình</h4>
+<div class="question">2. It wasn’t necessary to meet me yesterday. (needn’t)<textarea></textarea></div>
+<div class="question">3. I saw the film although I dislike horror movies. (spite)<textarea></textarea></div>
+
+<h4>🔴 Khó</h4>
+<div class="question">4. I’ve never tasted such delicious food before. (ever)<textarea></textarea></div>
+
+<h3>Task 2. Passive voice</h3>
+<div class="question">5. They will hold the meeting tomorrow.<textarea></textarea></div>
+<div class="question">6. People spend a lot of money on advertising.<textarea></t
